@@ -54,14 +54,19 @@ III - Interagir avec Git:
 
 'git remote add origin https://github.com/St4nwYn/Aeterna.git'
  Maintenant vos fichiers seront directement evoyé sur github.
-
-
-/!\ D'abord être à jour avant d'envoyer du contenu!
  a - Récupérer du contenu sur git:
 1 . 'git clone https://github.com/St4nwYn/Aeterna.git' pour récuperer un document
 1bis . 'git pull origin master' pour récupérer les dernières modifs.
 
  b - Envoyer son contenu sur git:
 1 . 'git push -u origin master' Envoie les dernières modifications faites dans votre dossier.
+/!\ BEAUCOUP DE PB MA SOLUTION:
 
- 
+1 . 'git branch Arthur' te permet de créer ta branche
+2 . 'git push origin Arthur' te permet de push sur ta branche
+3 . 'git checkout master' te remet sur la branche principale
+4 . 'git merge Arthur' ajoute ce que tu as sur ta branche sur la branche principale
+
+ c - Supprimer une branche
+'git push origin --delete Tabranche'
+  
