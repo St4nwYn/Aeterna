@@ -1,0 +1,67 @@
+Petit point: 
+ici '' seront utilisées pour les citations et "" lorsqu'il y a effectivement besoin d'utiliser
+des guillemets.
+ici * en début de ligne représente un point
+
+I - Faire d'un dossier votre répertoire Git:
+1 . Créez un dossier.
+2 . Clic gauche -> Cliquea sur 'Git Bash here'
+3 . Git Bash s'ouvre.
+4 . Tapez la commande 'git init'. Votre fichier est maintenant un répertoire Git.
+5 . Tapez la commande 'git config --global user.email "you@example.com"'
+6 . Tapez la commande 'git config --global user.name "Your Name"
+
+D'avenir répétez l'étape 2 sur votre dossier afin de pouvoir interagir avec celui-ci.
+Les étapes 5 et 6 vous permettrons de vous identifier pour push ou commit.
+
+II - Les commandes:
+* Ajouter un readme:
+1 . 'echo "#Aeterna" >> README.md'
+2 . 'git add README.md'
+
+*Ajouter un fichier:
+1. Drag & Drop le fichier dans le document source.
+2. 'git add lefichier.extension'
+
+*Ajoutez tous les fichiers:
+1. Drag & Drop les fichier dans le document source.
+2. 'git add .'
+
+*Mettre à jour le document (lors de modification d'un fichier):
+'git commit -m "Hey j'ai modifié ça c'était cool"'
+
+*Modifier le message du commit précédent:
+'git commit --amend -m "Votre nouveau message"'
+
+*Voir quelles modification ont été faites
+'git log' (/!\ ne peut être fait si un commit n'a pas été lancé au
+préalable)
+La première ligne en jaune est appelée SHA.
+
+* accéder à un commit précédent:
+'git checkout SHAducommit'
+
+*revenir au commit le plus récent:
+'git checkout master'
+
+*annuler un commit:
+'git revert SHAducommit' (à utliiser avec parciemonie)
+
+*reset:
+git reset --hard
+
+III - Interagir avec Git:
+
+'git remote add origin https://github.com/St4nwYn/Aeterna.git'
+ Maintenant vos fichiers seront directement evoyé sur github.
+
+
+/!\ D'abord être à jour avant d'envoyer du contenu!
+ a - Récupérer du contenu sur git:
+1 . 'git clone https://github.com/St4nwYn/Aeterna.git' pour récuperer un document
+1bis . 'git pull origin master' pour récupérer les dernières modifs.
+
+ b - Envoyer son contenu sur git:
+1 . 'git push -u origin master' Envoie les dernières modifications faites dans votre dossier.
+
+ 
